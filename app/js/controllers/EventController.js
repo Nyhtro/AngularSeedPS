@@ -3,6 +3,8 @@
 eventsApp.controller('EventController',
     function EventController($scope) {
 
+        $scope.snippet = '<span style="color:red">Hi there</span>';
+        $scope.boolValue = false;
         $scope.event = {
             name: 'Angular Boot Camp',
             date: '1/1/2013',
@@ -17,7 +19,7 @@ eventsApp.controller('EventController',
                 {
                     name: 'Super sessions',
                     creatorName: "Bobby",
-                    duration: '1 hr',
+                    duration: 1,
                     level: 'Super',
                     abstract: 'Learning about shibby stuff',
                     upVoteCount: 0
@@ -25,7 +27,7 @@ eventsApp.controller('EventController',
                 {
                     name: 'Shibby session',
                     creatorName: "Bobby",
-                    duration: '1 hr',
+                    duration: 2,
                     level: 'Super',
                     abstract: 'Learning about shibby stuff',
                     upVoteCount: 0
@@ -33,7 +35,7 @@ eventsApp.controller('EventController',
                 {
                     name: "Average",
                     creatorName: "Bobby",
-                    duration: '1 hr',
+                    duration: 4,
                     level: 'Super',
                     abstract: 'Learning about shibby stuff',
                     upVoteCount: 0
